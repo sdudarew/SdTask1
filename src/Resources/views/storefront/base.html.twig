@@ -1,5 +1,6 @@
 {% sw_extends '@Storefront/storefront/base.html.twig' %}
 
+{# top-bar außerhalb von container eingefügt#}
 {% block base_header %}
     <header class="header-main">
         {% block base_header_inner %}
@@ -11,4 +12,5 @@
     </header>
 {% endblock %}
 
+{# Navigation entfernt #}
 {% block base_navigation %}{% endblock %}

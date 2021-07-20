@@ -1,3 +1,4 @@
+/*header.html.twig*/
 .sd-header-navigation {
     display: flex;
     list-style-type: none;
@@ -7,14 +8,20 @@
     a {
         margin-right: 20px;
         font-size: inherit;
-
-        &:last-child {
-            margin-right: 0;
-            border-right: 0;
-        }
     }
 }
 
+/*header-html.twig*/
+.sd-login {
+    display: flex;
+    justify-content: space-between;
+    a {
+        color: #4a545b;
+        margin: 20px;
+    }
+}
+
+/*top-bar.html.twig*/
 #top {
     border-bottom-color: #bcc1c7;
     border-bottom-style: solid;
@@ -30,6 +37,7 @@
     }
 }
 
+/*top-bar und custom navigation für kleine Bildschrime ausblenden*/
 @media only screen and (max-width: 760px) {
     #top {
         display: none;
@@ -39,19 +47,7 @@
     }
 }
 
-.header-cart-total {
-    color: #4a545b;
-}
-
-.sd-login {
-    display: flex;
-    justify-content: space-between;
-    a {
-        color: #4a545b;
-        margin: 20px;
-    }
-}
-
+/*sd-account-widget.html.twig*/
 .sd-account-button {
     background: none !important;
     border: none;
@@ -61,10 +57,12 @@
     cursor: pointer;
 }
 
+/*cart-widget.html.twig*/
 .header-cart-total-sd {
     font-family: sans-serif;
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.5;
     margin: 20px;
+    color: #4a545b;
 }
